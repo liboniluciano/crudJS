@@ -1,0 +1,51 @@
+<html>
+<body onload="desabilitadivs">
+    <head>
+        <script language="javascript" src=script.js></script>
+    </head>
+    <div id="divFormulario">
+        <fieldset>
+            <div id="divPesquisa">
+                <legend> Pesquisa</legend>
+                <label for="cpf">CPF:</label>
+                <input type="text" id="txtCPFp" name="cpf" />
+            </div>
+            <div id="divBotoes">
+                <button type="button" id="btnNovo" onclick="adicionarPessoa()">Novo</button>
+                <button type="button" id="btnBuscar" onclick="buscar()">Buscar</button>
+            </div>
+        </fieldset>
+    </div>
+    <div id="divGrid">
+        <fieldset>
+            <legend>Grid Pessoas</legend>
+            <table id="tbGrid">
+                <thead>
+                    <tr>
+                        <th>CPF</th>
+                        <th>Nome</th>
+                        <th>Cadastro</th>
+                        <th>Edição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+    <div id="divCadastroEdicao">
+        <fieldset>
+            <legend> Cadastro/Edição</legend>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="txtCPFIns" />
+            <label for="nome">Nome:</label>
+            <input type="text" id="txtNomeIns" name="cpf" />
+            <div id="divBotoes">
+                <button type="button" id="btnCancela" onclick="cancelar()">Cancelar</button>
+                <button type="reset" id="btnLimpar">Limpar</button>
+                <button type="button" id="btnSalvar" onclick="salvarPessoa()">Salvar</button>
+            </div>
+    </div>
+    </fieldset>
+</body>
+</html>
